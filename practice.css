@@ -530,85 +530,151 @@ input{
 
  @media (max-width: 480px) {
 
-    /* Hero section */
-    #section2 {
-        flex-direction: column !important;
-        padding: 10px !important;
-    }
+    /* HEADER */
+  header {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 
-    .ojameat {
-        font-size: 25px !important;
-        white-space: normal !important;
-    }
+  .selection {
+    margin-left: 0;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    .imgfresh {
-        width: 150px !important;
-        height: 150px !important;
-    }
+  .buttonlink {
+    font-size: 14px;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+  }
 
-    /* Products - change grid to single column */
+  .writeup {
+    font-size: 18px;
+  }
+
+  /* SECTION 2 */
+  #section2 {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .ojameat {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .imgfresh {
+    height: 130px;
+    width: 130px;
+  }
+
+  .heading-premium {
+    font-size: 24px;
+    margin-left: 20px;
+  }
+
+  p {
+    margin-left: 20px;
+    font-size: 13px;
+  }
+
+  /* SECTION 5 - bestsellers */
+  #section5 {
     #section5 {
-        grid-template-columns: 1fr !important;
-        margin-left: 10px !important;
-        margin-right: 10px !important;
-    }
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-    /* How to order - change grid to single column */
-    #section7 {
-        grid-template-columns: 1fr !important;
-        margin-left: 10px !important;
-        margin-right: 10px !important;
-    }
+ /* SECTION 7 - order process */
+  #section7 {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-    /* Reviews - change grid to single column */
-    #section9 {
-        grid-template-columns: 1fr !important;
-        margin-left: 10px !important;
-        margin-right: 10px !important;
-    }
+  .orderprocess h1 {
+    font-size: 50px;
+  }
 
-    /* Order form section */
-    .deliveryzone {
-        flex-direction: column !important;
-    }
+  /* SECTION 9 - reviews */
+  #section9 {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-    .delivery-left {
-        width: 100% !important;
-    }
+  /* DELIVERY ZONE */
+  .deliveryzone {
+    flex-direction: column;
+    padding: 0 10px;
+  }
 
-    .deliveryloc {
-        width: 100% !important;
-        margin-left: 0 !important;
-    }
+  .delivery-left {
+    width: 100%;
+  }
 
-    .form {
-        width: 100% !important;
-        margin-left: 0 !important;
-        margin-top: 20px !important;
-    }
+  .deliveryloc {
+    margin-left: 0;
+    width: 100%;
+  }
 
-    .form h1 {
-        font-size: 18px !important;
-        white-space: normal !important;
-    }
+  /* FORM */
+  .form {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
 
-    /* Header */
-    .selection {
-        display: none !important;
-    }
+  .form h1 {
+    font-size: 18px;
+    margin-left: 10px;
+    white-space: normal;
+  }
 
-    .writeup {
-        font-size: 18px !important;
-    }
-} 
+  label {
+    font-size: 16px;
+  }
+
+  .deliverytext {
+    font-size: 16px;
+  }
+
+  /* INFO */
+  .info {
+    margin-left: 10px;
+    flex-wrap: wrap;
+  }
+
+  /* FOOTER */
+  footer p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* LINK */
+  .link {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
 
  @media (max-width: 768px) {
-    .deliveryzone {
-        flex-direction: column;
+    .deliveryzone {    
+    flex-direction: column;
     }
 
     .form {
         width: 100%;
         margin-left: 0;
     }
+}
 }
